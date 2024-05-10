@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(115deg, rgba(226, 226, 226, 1) 0%, rgba(147, 158, 190, 1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form {
+    display: flex;
+    gap: 3rem;
+    max-width: 950px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.signin-form-wrapper {
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.signup-cta-wrapper {
+    background-color: #5441B0;
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.signup-cta-wrapper p {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+input {
+    flex: 1;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EEEEEE;
+    padding: 0.7rem;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.signin-form-container-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signin-form-container-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-auth-button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #cbc9c9;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.cta {
+    padding: 0.7rem 3.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #5441B0;
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cta-outline {
+    border: 1px solid white;
+    color: white;
+}
