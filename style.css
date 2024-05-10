@@ -17,13 +17,21 @@ body {
     justify-content: center;
 }
 
+button:active {
+    outline: none;
+    border: none;
+}
+
 .main-form {
     display: flex;
-    gap: 3rem;
+    /* gap: 3rem; */
     max-width: 950px;
     background-color: white;
     border-radius: 30px;
     overflow: hidden;
+    position: relative;
+
+    height: 450px;
 }
 
 .signin-form-wrapper {
@@ -33,7 +41,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    transition: all 1s;
+
 }
+
 
 .signup-cta-wrapper {
     background-color: #5441B0;
@@ -48,6 +59,23 @@ body {
 
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+
+    transition: all 1s;
+}
+
+.signup-cta-wrapper.toggle {
+    transform: translateX(-100%);
+
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.signin-form-wrapper.toggle {
+    transform: translateX(100%);
 }
 
 .signup-cta-wrapper p {
